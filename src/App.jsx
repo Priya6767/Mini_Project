@@ -24,7 +24,7 @@ import TyphoidInfo from './Pages/monsoon/Typhoid';
 import CholeraInfo from './Pages/monsoon/Cholera';
 import LeptospirosisInfo from './Pages/monsoon/Leptospirosis';
 import CommonColdFluInfo from './Pages/monsoon/CommonCold_Flu';
-
+import { Nearby_PHC } from './Pages/Nearby_PHC';
 function App() {
   return (
     <Router>
@@ -58,7 +58,7 @@ function App() {
         <Route path="/cholera-info" element={<CholeraInfo />} />
         <Route path="/leptospirosis-info" element={<LeptospirosisInfo />} />
         <Route path="/common-cold-flu-info" element={<CommonColdFluInfo />} />
-
+        <Route path="/nearby-phc" element={<Nearby_PHC />} />
       </Routes>
     </Router>
   );

@@ -74,7 +74,7 @@ const Dashboard = () => {
                 </li>
                 <li>
                   <button
-                    onClick={() => navigate("/nearby-phcs")}
+                    onClick={() => navigate("/nearby-phc")}
                     className="w-full text-left block px-3 py-2 rounded hover:bg-blue-700 transition"
                   >
                     NEARBY PHCs
