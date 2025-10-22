@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom"; // ✅ Import Link
 
 const General_Awarness = () => {
   return (
@@ -54,37 +55,44 @@ const General_Awarness = () => {
               {
                 title: "Personal Hygiene",
                 desc: "Wash your hands frequently, maintain oral hygiene, and bathe daily to reduce disease risk.",
+                link: "/personal-hygiene", // ✅ Link added
               },
               {
                 title: "Balanced Diet",
                 desc: "Eat more fruits, vegetables, and whole grains while avoiding junk food and excessive sugar.",
+                link: "/balanced-diet",
               },
               {
                 title: "Regular Exercise",
                 desc: "Stay active for at least 30 minutes daily to improve heart health and immunity.",
+                link: "/regular-exercise",
               },
               {
                 title: "Adequate Sleep",
                 desc: "Get 7–8 hours of quality sleep to help your body recover and strengthen immunity.",
+                link: "/adequate-sleep",
               },
               {
                 title: "Stay Hydrated",
                 desc: "Drink enough water daily to maintain metabolism and prevent dehydration.",
+                link: "/stay-hydrated",
               },
               {
                 title: "Vaccinations",
                 desc: "Keep your vaccinations updated to protect against seasonal and viral infections.",
+                link: "/vaccinations",
               },
             ].map((item, i) => (
-              <div
+              <Link
+                to={item.link}
                 key={i}
-                className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition"
+                className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition block"
               >
                 <h3 className="text-xl font-semibold mb-2 text-pink-600">
                   {item.title}
                 </h3>
                 <p className="text-gray-700 text-sm">{item.desc}</p>
-              </div>
+              </Link>
             ))}
           </div>
         </section>

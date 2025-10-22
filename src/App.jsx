@@ -24,7 +24,9 @@ import TyphoidInfo from './Pages/monsoon/Typhoid';
 import CholeraInfo from './Pages/monsoon/Cholera';
 import LeptospirosisInfo from './Pages/monsoon/Leptospirosis';
 import CommonColdFluInfo from './Pages/monsoon/CommonCold_Flu';
-import { Nearby_PHC } from './Pages/Nearby_PHC';
+import PersonalHygiene from './Pages/PersonalHygiene';
+import BalancedDiet from './Pages/BalancedDiet';
+
 function App() {
   return (
     <Router>
@@ -58,7 +60,8 @@ function App() {
         <Route path="/cholera-info" element={<CholeraInfo />} />
         <Route path="/leptospirosis-info" element={<LeptospirosisInfo />} />
         <Route path="/common-cold-flu-info" element={<CommonColdFluInfo />} />
-        <Route path="/nearby-phc" element={<Nearby_PHC />} />
+        <Route path="/personal-hygiene" element={<PersonalHygiene />} />
+        <Route path="/balanced-diet" element={<BalancedDiet />} />
       </Routes>
     </Router>
   );
